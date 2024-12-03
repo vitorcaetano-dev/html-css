@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <link rel="shortcut icon" href="Martz90-Hex-Html-5.512 - Copia.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipos de midias</title>
+</head>
+<body>
+    <h1>imagens que se adaptam sozinhas</h1>
+    <p>tente abrir esse site em dispositivos diferentes, ou aumente e diminua seu navegador</p>
+       
+        <picture> <!--a ordem importa,  e importante o type em srcset estar configurada, errei nisso :( -->
+            <source media="(max-width:750px )" srcset="imagem/celular.png" type="image/png">
+
+             <source media="(max-width: 1050px )" srcset="imagem/tablet.png" type="image/png">
+
+        <img src="imagem/computador.png" alt="imagem flexivel">
+    </picture>
+    <h1>reproduzindo audio</h1>
+    <p>vamos aprender a adicionar audios em html</p>
+    <!--controls faz o audio aparecer com o midia play-->
+    <audio src="midia/gemini.mp3" controls autoplay></audio>
+    <!--em vez de srcset usado no source de imagem, utiliza src pra audio-->
+
+    <audio preload="metadata" autoplay controls loop> <source src="midia/gemini.mp3" type="audio/mpeg"  ></audio>
+</body>
+</html>

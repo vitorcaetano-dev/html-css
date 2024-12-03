@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes externas</title>
+    <!--tipos de format
+    -opentype(otf)
+    -truetype (ttf)
+    -embedded-opentype (aplle...)
+    -truetype-att 
+    avg
+    -->
+    <style>
+        @font-face { 
+            font-family:'rimons';
+            src: url(RIMONS.otf) format('opentype'),url(RIMONS.ttf) format(truetype);
+            font-weight: normal;
+            font-style:normal;
+        }
+        body {
+            font-family:'rimons', Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>TESTE</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum, commodi laudantium natus accusamus cupiditate veniam velit quisquam suscipit esse alias quibusdam ipsa dolorum earum sint maxime labore, praesentium aut.</p>
+</body>
+</html>
