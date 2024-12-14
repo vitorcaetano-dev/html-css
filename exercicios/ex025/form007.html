@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <form action="cadastro.php">
+        <p>
+            <label for="iest">estado:</label>
+            <select name="est" id="iest">
+                <option value="sp">sao paulo</option>
+                <option value="rj">rio de janeiro</option>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lsprof">
+            <datalist id="lsprof">
+                <option value="ff">professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">mensagem:</label>
+            <textarea name="msg" id="imsg" ></textarea>
+        </p>
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+</html>
